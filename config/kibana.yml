@@ -1,0 +1,29 @@
+---
+settings:
+  queryString:
+    changes:
+      "query:queryString:options": "{ \"analyze_wildcard\": true, \"default_field\": \"log\" }"
+  defaultIndex:
+    changes:
+      "defaultIndex": "kubernetes"
+indexes:
+  kubernetes:
+    attributes:
+      title: kubernetes
+      timeFieldName: "@timestamp"
+  logstash:
+    attributes:
+      title: logstash
+      timeFieldName: "@timestamp"
+  events:
+    attributes:
+      title: events
+      timeFieldName: "@timestamp"
+  fluxcloud:
+    attributes:
+      title: fluxcloud
+      timeFieldName: "@timestamp"
+  haproxy:
+    attributes:
+      title: haproxy
+      timeFieldName: "@timestamp"

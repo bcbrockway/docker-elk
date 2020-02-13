@@ -1,0 +1,8 @@
+---
+users:
+  XXXX:
+    password: XXXX
+    roles:
+    - superuser
+    full_name: XXXX
+    email: XXXX@XXXX.XXXX
